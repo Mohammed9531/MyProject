@@ -1,0 +1,20 @@
+<table class="table table-bordered" ng-controller="articlesCtrl">
+	<thead>
+		<tr>	
+			<th>Date</th>		
+			<th>Article Name</th>
+			<th>Posted By</th>
+			<th>Actions</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="x in articles">
+			<td>{{ x.date }}</td>
+			<td>{{ x.articleName }}</td>
+			<td>{{ x.postedBy }}</td>
+			<td><a href=""><i class="glyphicon glyphicon-pencil"></i></a></td>
+			<td><a href=""><i class="glyphicon glyphicon-eye-open"></i></a></td>
+			<td><a href=""><i class="glyphicon glyphicon-trash"></i></a></td>
+		</tr>
+	</tbody>
+</table>

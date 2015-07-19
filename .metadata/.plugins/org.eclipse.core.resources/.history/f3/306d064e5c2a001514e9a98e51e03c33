@@ -1,0 +1,78 @@
+[ 
+ {
+	"date"			: "07/01/2015",
+    "articleName"	: "FaceBook",
+    "postedBy" 		: "Mark",
+    "image"			: "https://www.facebook.com/images/fb_icon_325x325.png"
+  },{
+	"date"			: "07/02/2015",
+    "articleName"	: "Twitter",
+    "postedBy" 		: "John",
+    "image"			: "https://g.twimg.com/Twitter_logo_blue.png"
+  },
+  {
+	"date"      	: "07/03/2015",
+    "articleName"   : "LinkedIn",
+    "postedBy" 		: "Martin",
+    "image"			: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png"
+  },
+  {
+	"date"      	: "07/04/2015",
+    "articleName"   : "Pinterest",
+    "postedBy" 		: "Andy",
+    "image"			: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMTQgIo-FNZgK-30iJBuFqpsMgvDbpcGRIoZjsb-fYI0h5SFDYVVm7u7Q"
+  },
+  {
+	"date"     		: "07/05/2015",
+    "articleName"   : "Google Plus+",
+    "postedBy" 		: "Bill",
+    "image"			: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYhUK20_wCqN0eD7BqSm2vdLRRCm18f-4_jY16UGqltU7HNn8qiV0T5g" 
+  },
+  {
+	"date"      	: "07/06/2015",
+    "articleName"   : "Tumblr",
+    "postedBy" 		: "Franklin",
+    "image"			: "https://secure.assets.tumblr.com/images/logo_page/img_logo_bluebg_2x.png" 
+  },
+  {
+	"date"      	: "07/07/2015",
+    "articleName"   : "Instagram",
+    "postedBy" 		: "Chris",
+    "image"			: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrNMbYneP_dwCX3p2humnJyuD6pId3XPwIhsSqtfI0ZDdQuWnbPb726g" 
+  },
+  {
+	"date"      	: "07/08/2015",
+    "articleName"   : "VK",
+    "postedBy" 		: "Joseph",
+    "image"			: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT34ks7jDc8ooPuiwTwThryj5_edcH_XgmMHFvsRNBy1OIrGNs6wYglnw" 
+  },
+  {
+	"date"      	: "07/09/2015",
+    "articleName"   : "Flickr",
+    "postedBy" 		: "Linda",
+    "image"			: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQI9oCUvaDbruBOs0T3ydCIczZuHMRekV1utXFytq9W7rJbwbBjVA" 
+  },
+  {
+	"date"      	: "07/11/2015",
+    "articleName"   : "Meetup",
+    "postedBy" 		: "Jennifer",
+    "image"			: "https://upload.wikimedia.org/wikipedia/commons/7/73/Meetup_Logo_2015.png" 
+  },
+  {
+	"date"      	: "07/12/2015",
+    "articleName"   : "Tagged",
+    "postedBy" 		: "Christine",
+    "image"			: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRydLN28oqO4K0L8o8KDYloALJFL71cWXBi_1B3ttZ6gs9mdKlO4TaknfnOSA" 
+  },
+  {
+	"date"      	: "07/13/2015",
+    "articleName"   : "Ask.fm",
+    "postedBy" 		: "Mary",
+    "image"			: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQOSDQii4DeCODkN11SH0Mqn2vx8BZaW8770clg3BuCCfxa7CmZ8aSebY" 
+  },  {
+	"date"      	: "07/10/2015",
+    "articleName"   : "Vine",
+    "postedBy" 		: "Matthew",
+    "image"			: "https://vine.co/static/images/vine_glyph_2x.png" 
+  }
+  ]

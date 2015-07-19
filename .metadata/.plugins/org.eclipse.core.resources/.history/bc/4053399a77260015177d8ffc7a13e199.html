@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+<script src="js/angular-ui-router.js"></script>
+<script>
+       
+
+    </script>
+</head>
+<body>
+
+    <!-- We'll also add some navigation: -->
+    <a ui-sref="state1">State 1</a>
+    <a ui-sref="state2">State 2</a>
+    
+    <div ui-view></div>
+ <!-- <script>
+  var myApp = angular.module('myApp', ['ui.router']);
+ myApp.config(function($stateProvider, $urlRouterProvider) {
+
+	  $urlRouterProvider.otherwise("/index");
+	  $stateProvider
+	    .state('state1', {
+	      url: "/state1",
+	      templateUrl: "partials/state1.html"
+	    })
+	    
+
+	    .state('state2', {
+	      url: "/state2",
+	      templateUrl: "partials/state2.html"
+	    })
+	    
+	    }); 
+ </script>    -->
+</body>
+</html>

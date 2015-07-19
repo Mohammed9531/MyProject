@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<title>Epsilon</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap3-wysihtml5.css">
+<!-- 	<link rel="stylesheet" href="editor.css"> -->
+
+</head>
+<body>
+	<div class="list-group">
+	      <form class="form-horizontal" role="form">
+      		<!------------------ Contents ------------------->
+		            <div class="col-sm-6">
+		              <label>Title:</label>
+		              <input class="form-control" type="text" ng-model="title" id="lg" placeholder="Name of the article">
+		              <br>
+		              <label>Upload:</label>
+		              <input type="file" class="form-control">				               
+		              <br>
+		              <label>Author:</label>
+		              <input class="form-control" type="text" ng-model="author" id="lg" placeholder="Author name">
+		              <br>
+		              <label>Description:</label>
+		              <input class="form-control" type="text" ng-model="desc" id="lg" placeholder="Description of the article">
+		              <br>
+		              <label>Message:</label>
+		              <!-- <textarea class="form-control" ng-model="msg" type="text" rows="10" cols="60" placeholder="Type your message here..."></textarea> -->
+		              <textarea id="wysi" class="form-control" rows="10" cols="55" placeholder="Enter text ..."></textarea>
+		              <br>
+		              <button type="button" class="btn btn-primary" ng-click="addPerson()">Submit</button>
+		            </div>
+	       </form>
+	       
+	  <!------------------ End of body ------------------->   
+    </div>
+
+	
+	<!-------------- Scripts -------------->    
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="bootstrap3-wysihtml5.all.min.js"></script>
+	<script src="bootstrap3-wysihtml5.min.js"></script>
+	<script src="events.js"></script>
+</body>
+</html>

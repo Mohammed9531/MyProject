@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html  ng-app="app">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<title>Epsilon</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body ng-controller="ctrl">
+	<!--------- Displays Header ----------->
+	<div ng-include src="'partials/header.html'"></div>
+	
+	<!---- Views will be injected here ---->
+    <div ui-view></div>
+    
+    <!--------- Displays Footer ----------->
+    <div ng-include src="'partials/footer.html'"></div>
+    
+    <ul>
+        <li ng-class="{active:isActive('/dashboard ')}"><a href="#/dashboard">Dashboard</a></li>
+        <li ng-class="{active:isActive('/dashboard1')}"><a href="#/dashboard">Dashboard1</a></li>
+        <li ng-class="{active:isActive('/dashboard2')}"><a href="#/dashboard">Dashboard2</a></li>
+        <li ng-class="{active:isActive('/dashboard3')}"><a href="#/dashboard">Dashboard3</a></li>
+        <li ng-class="{active:isActive('/dashboard4')}"><a href="#/dashboard">Dashboard4</a></li>
+        <li ng-class="{active:isActive('/dashboard5')}"><a href="#/dashboard">Dashboard5</a></li>
+    </ul>
+    <!-- Contents -->
+	<script type="text/ng-template" id="partials/dashboard1">
+    Dashboard content
+	</script>
+	<script type="text/ng-template" id="partials/dashboard">
+    Lab content
+	</script>
+    
+	<!-------------- Scripts -------------->   
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script> 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/routing.js"></script>
+	<script src="js/controllers/articlesController.js"></script>
+	<script src="js/angular-ui-router.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<title>Epsilon</title>
+	<link rel="stylesheet" href="css/cards.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="lib/wysihtml5/bootstrap3-wysihtml5.css">
+</head>
+<body ng-controller="ctrl">
+	<!--------- Displays Header ----------->
+	<div ng-include src="'partials/header.html'"></div>
+	
+	<!---- Views will be injected here ---->
+    <div ui-view></div>
+    
+    <!--------- Displays Footer ----------->
+    <div ng-include src="'partials/footer.html'"></div>
+    
+
+	<!-------------- Scripts -------------->    
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/routing.js"></script>
+	<script src="js/controllers/articlesController.js"></script>
+	<script src="js/services/service.js"></script>
+	<script src="js/services/factory.js"></script>
+	<script src="js/angular-ui-router.js"></script>	
+	<script src="lib/wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+	<script src="lib/wysihtml5/bootstrap3-wysihtml5.min.js"></script>
+	<script src="lib/wysihtml5/events.js"></script>
+	
+</body>
+</html>

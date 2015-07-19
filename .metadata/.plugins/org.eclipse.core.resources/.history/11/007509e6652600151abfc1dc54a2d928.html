@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Epsilon</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<style>
+</style>
+</head>
+<body ng-app="app">
+	<header>
+		<h1>Epsilon</h1>
+	</header>
+	<nav>
+		<ul class="nav nav-tabs">
+			<li role="presentation" class="active"><a ui-sref="home">Home</a></li>
+			<li role="presentation"><a ui-sref="about">About Us</a></li>
+			<li role="presentation"><a ui-sref="contact">Contact Us</a></li>
+		</ul>
+		<hr>
+	</nav>
+	<div class="content">
+			<div class="jumbotron">
+				<h1 id="demo"></h1>
+				<p class="jbtn">
+					<a class="btn btn-primary" href="#" role="button">Learn more</a>
+				</p>
+				<p id="time"></p>
+			</div>
+	</div>
+	<div class="" ui-view></div> 
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.js"></script>
+	  <!-- UI-Router -->
+	  <script src="//angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>  
+	<script src="js/greeting.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/routing.js"></script>
+</body>
+</html>

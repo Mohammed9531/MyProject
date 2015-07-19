@@ -1,0 +1,9 @@
+<div class="content">
+	<div class="jumbotron">
+		<h1 id="demo"></h1>
+		<p class="jbtn">
+			<a class="btn btn-primary" href="#" role="button">Learn more</a>
+		</p>
+		<p id="time"></p>
+	</div>
+</div>

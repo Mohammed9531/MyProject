@@ -1,0 +1,69 @@
+{
+"data": [
+  {
+	"date"       : "07/01/2015",
+    "articleName": "Facebook",
+    "postedBy" 	 : "Sam"
+  },
+    {
+	"date"      	: "07/02/2015",
+    "articleName"   : "Twitter",
+    "postedBy" 		: "John"
+  },
+  {
+	"date"      	: "07/03/2015",
+    "articleName"   : "LinkedIn",
+    "postedBy" 		: "Martin"
+  },
+  {
+	"date"      	: "07/04/2015",
+    "articleName"   : "Pinterest",
+    "postedBy" 		: "Andy"
+  },
+  {
+	"date"     		: "07/05/2015",
+    "articleName"   : "Google Plus+",
+    "postedBy" 		: "Bill"
+  },
+  {
+	"date"      	: "07/06/2015",
+    "articleName"   : "Tumblr",
+    "postedBy" 		: "Franklin"
+  },
+  {
+	"date"      	: "07/07/2015",
+    "articleName"   : "Instagram",
+    "postedBy" 		: "Chris"
+  },
+  {
+	"date"      	: "07/08/2015",
+    "articleName"   : "VK",
+    "postedBy" 		: "Joseph"
+  },
+  {
+	"date"      	: "07/09/2015",
+    "articleName"   : "Flickr",
+    "postedBy" 		: "Linda"
+  },
+  {
+	"date"      	: "07/10/2015",
+    "articleName"   : "Vine",
+    "postedBy" 		: "Matthew"
+  },
+  {
+	"date"      	: "07/11/2015",
+    "articleName"   : "Meetup",
+    "postedBy" 		: "Jennifer"
+  },
+  {
+	"date"      	: "07/12/2015",
+    "articleName"   : "Tagged",
+    "postedBy" 		: "Christine"
+  },
+  {
+	"date"      	: "07/13/2015",
+    "articleName"   : "Ask.fm",
+    "postedBy" 		: "Mary"
+  }
+]
+}

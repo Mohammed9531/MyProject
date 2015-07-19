@@ -1,0 +1,16 @@
+/**
+ * author : mshoukath
+ * date	  : 07/13/2015
+ * time	  : 2:45 pm est
+ * created with eclipse luna
+ */
+
+app.controller('articlesCtrl', function($scope, $http){
+	
+	$http.get("articles.json")
+	
+	.success(function(response){
+		$scope.articles = reponse; 
+		
+	});	
+});

@@ -1,0 +1,8 @@
+
+<tr>
+	<td>{{x.id}}</td>
+	<td>{{x.date}}</td>
+	<td>{{x.articleName}}</td>
+	<td>{{x.postedBy}}</td>
+	<td><img src="{{x.image}}"></td>
+</tr>

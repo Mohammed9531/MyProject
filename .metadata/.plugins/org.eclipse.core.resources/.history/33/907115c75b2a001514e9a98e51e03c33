@@ -1,0 +1,79 @@
+[ 
+ {
+	"date"			: "07/01/2015",
+    "articleName"	: "FaceBook",
+    "postedBy" 		: "Mark",
+    "image"			: "https://www.facebook.com/images/fb_icon_325x325.png"
+  },{
+	"date"			: "07/02/2015",
+    "articleName"	: "Twitter",
+    "postedBy" 		: "John",
+    "image"			: "https://g.twimg.com/Twitter_logo_blue.png"
+  },
+  {
+	"date"      	: "07/03/2015",
+    "articleName"   : "LinkedIn",
+    "postedBy" 		: "Martin",
+    "image"			: ""
+  },
+  {
+	"date"      	: "07/04/2015",
+    "articleName"   : "Pinterest",
+    "postedBy" 		: "Andy",
+    "image"			: ""
+  },
+  {
+	"date"     		: "07/05/2015",
+    "articleName"   : "Google Plus+",
+    "postedBy" 		: "Bill",
+    "image"			: "" 
+  },
+  {
+	"date"      	: "07/06/2015",
+    "articleName"   : "Tumblr",
+    "postedBy" 		: "Franklin",
+    "image"			: "" 
+  },
+  {
+	"date"      	: "07/07/2015",
+    "articleName"   : "Instagram",
+    "postedBy" 		: "Chris",
+    "image"			: "" 
+  },
+  {
+	"date"      	: "07/08/2015",
+    "articleName"   : "VK",
+    "postedBy" 		: "Joseph",
+    "image"			: "" 
+  },
+  {
+	"date"      	: "07/09/2015",
+    "articleName"   : "Flickr",
+    "postedBy" 		: "Linda",
+    "image"			: "" 
+  },
+  {
+	"date"      	: "07/10/2015",
+    "articleName"   : "Vine",
+    "postedBy" 		: "Matthew",
+    "image"			: "" 
+  },
+  {
+	"date"      	: "07/11/2015",
+    "articleName"   : "Meetup",
+    "postedBy" 		: "Jennifer",
+    "image"			: "" 
+  },
+  {
+	"date"      	: "07/12/2015",
+    "articleName"   : "Tagged",
+    "postedBy" 		: "Christine",
+    "image"			: "" 
+  },
+  {
+	"date"      	: "07/13/2015",
+    "articleName"   : "Ask.fm",
+    "postedBy" 		: "Mary",
+    "image"			: "" 
+  }
+  ]

@@ -1,0 +1,31 @@
+<div ng-repeat="x in articles">
+<div class="col-sm-4 col-md-4">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<a href="#" class="pull-right">View</a>
+			<div class="ribbon">
+				<div class="ribbon-stitches-top"></div>
+				<span class="article-title">{{x.articleName}}</span>
+				<div class="ribbon-stitches-bottom"></div>
+			</div>
+			<span class="article-author">By {{x.postedBy}}</span> <br>
+			<span class="article-date">Posted on: {{x.date }}</span>
+			<hr>
+			<div class="panel-body">
+				<h5>{{x.description}}</h5>
+				<!-- <div class="clearfix"></div>
+				<hr>
+				<div class="clearfix"></div> -->
+				<center>
+					<img
+						src="http://www.hdwallpapers-3d.com/wp-content/uploads/2014/06/cartoon-pictures-hd-wallpaper-2.jpg"
+						class="img-responsive img-thumbnail">
+				</center>
+				<br>
+				<p>{{x.message}}</p>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>

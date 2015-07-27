@@ -23,15 +23,20 @@ app.config(function($stateProvider, $urlRouterProvider) {
 		templateUrl: "partials/contact-us.html"
 	}).state('articles', {
 		url: "/articles",
-		templateUrl: "partials/cards.html"
+		templateUrl: "partials/cards.html",
+		controller: "ctrl"
+			
 	}).state('dashboard', {
 		url: "/dashboard",
-		templateUrl: "partials/dashboard.html"
+		templateUrl: "partials/dashboard.html",
+		controller: "ctrl"
+			
 	}).state('new', {
 		url: "/new",
 		templateUrl: "partials/new-article.html"
 	}).state('view', {
 		url: "/view",
-		templateUrl: "partials/view.html"
+		templateUrl: "partials/view.html",
+		controller: "shareCtrl"
 	});
 });

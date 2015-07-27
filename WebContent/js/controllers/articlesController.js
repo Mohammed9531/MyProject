@@ -20,4 +20,9 @@ app.controller('ctrl', function($scope, $http, dataShare) {
 		dataShare.sendData($scope.articles);
 	};
 	
+	/*$scope.status = {
+		isFirstOpen: true,
+		isFirstDisabled: false
+	};*/
+	
 });

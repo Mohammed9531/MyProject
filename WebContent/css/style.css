@@ -86,3 +86,7 @@ footer {
 .input-group-lg {
 	background-color: #eee;
 }
+
+.pagination-centered{
+text-align: center;
+}

@@ -5,7 +5,7 @@
  * created with eclipse luna
  */
 
-app.service('contactService', function () {
+/*app.service('contactService', function () {
 	//to create unique contact id
 	var uid = 1;
 
@@ -16,4 +16,4 @@ app.service('contactService', function () {
 			}
 		}
 	}
-});
+});*/

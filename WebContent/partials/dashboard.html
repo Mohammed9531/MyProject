@@ -1,10 +1,10 @@
 <div class="container-fluid">
-<div ng-include src="'partials/alerts.html'"></div>
+<!-- <div ng-include src="'partials/alerts.html'"></div> -->
 	<div class="panel panel-default">
 		<div class="panel-heading">
 		<h4><a data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-plus-sign"></span></a>&nbsp;<label>Add article</label></h4> 
 		</div>
-		<table class="table table-bordered" style="float: none">
+		<table class="table table-bordered" style="float: none;">
 			<thead>
 				<tr>
 					<th colspan="6">
@@ -19,17 +19,26 @@
 			<tbody>
 				<tr ng-repeat="x in articles | filter:search">
 				    <td><input type="checkbox" /></td>
-					<td>{{ x.date }}</td>
-					<td>{{ x.articleName }}</td>
-					<td>{{ x.postedBy }}</td>
-					<td><a ui-sref="view"><i class="glyphicon glyphicon-pencil"></i></a></td>
+					<td ng-model="date">{{ x.date }}</td>
+					<td ng-model="article">{{ x.articleName }}</td>
+					<td ng-model="posted">{{ x.postedBy }}</td>
+					<td><a href="#/view"><i class="glyphicon glyphicon-pencil"></i></a></td>
 					<td><a ui-sref="view" ><i class="glyphicon glyphicon-eye-open"></i></a></td>
-					<td><a href="" ng-show="test"><i class="glyphicon glyphicon-trash"></i></a></td>
+					<td><a ui-sref="view"><i class="glyphicon glyphicon-trash"></i></a></td>
 				</tr>
 			</tbody>
 		</table>
 		<div class="panel-footer"></div>
 	</div>
 </div>
-
+<nav class="pagination-centered">
+  <ul class="pagination">
+    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+    <li><a href="#">2 <span class="sr-only"></span></a></li>
+    <li><a href="#">3 <span class="sr-only"></span></a></li>
+    <li><a href="#">4 <span class="sr-only"></span></a></li>
+    <li class="disabled"><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+  </ul>
+</nav>
 <div ng-include src="'partials/new-article.html'"></div>

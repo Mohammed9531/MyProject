@@ -25,4 +25,19 @@ app.controller('ctrl', function($scope, $http, dataShare) {
 		isFirstDisabled: false
 	};*/
 	
+	$scope.remove= function(index){
+		var input = confirm("Are you sure you want to delete it?");
+
+		if(input){
+			$scope.articles.splice(index, 1);
+			alert("Deleted Successfully!");
+		}
+	}
+	
+	$scope.event = function(){
+		$scope.showHide = {
+				show: true,
+	            hide: false
+		}	
+	}	
 });

@@ -11,7 +11,22 @@
 			<thead>
 				<tr>
 					<th colspan="6">
-					<div ng-include src="'partials/search.html'"></div>
+					<!-- <div ng-include src="'partials/search.html'"></div> -->
+					<!-- Search bar -->
+					<div class="col-lg-4 col-lg-offset-4">
+					<form role="form">
+						<div class="form-group center-block">
+							<div class="input-group input-group-lg">
+								<input type="text" class="form-control" placeholder="Search" ng-model="search" /> <span
+									class="input-group-btn">
+									<button class="btn btn-default btn-lg" type="submit">
+										<span class="glyphicon glyphicon-search"></span>
+									</button>
+								</span>
+							</div>
+						</div>
+					</form>
+					</div>
 					</th>
 				</tr>
 				<tr class="thead">
@@ -37,15 +52,6 @@
 		<div class="panel-footer"></div>
 	</div>
 </div>
-<nav class="pagination-centered">
-  <ul class="pagination">
-    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
-    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-    <li><a href="#">2 <span class="sr-only"></span></a></li>
-    <li><a href="#">3 <span class="sr-only"></span></a></li>
-    <li><a href="#">4 <span class="sr-only"></span></a></li>
-    <li class="disabled"><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
-  </ul>
-</nav>
+<div ng-include src="'partials/pagination.html'"></div>
 <div ng-include src="'partials/new-article.html'"></div>
 <div ng-include src="'partials/delete-confirmation-modal.html'"></div>

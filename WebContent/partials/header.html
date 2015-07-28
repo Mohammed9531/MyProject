@@ -1,13 +1,21 @@
 <div class="header">
-		<h1>Epsilon</h1>
-	</div>
-	<div class="nav">
-		<ul class="nav nav-tabs">
-			<li role="presentation" class="active"><a ui-sref="home">Home</a></li>
-			<li role="presentation"><a ui-sref="about-us">About Us</a></li>
-			<li role="presentation"><a ui-sref="contact-us">Contact Us</a></li>
-			<li role="presentation"><a ui-sref="articles">Articles</a></li>
-			<li role="presentation"><a ui-sref="dashboard">Dashboard</a></li>
-		</ul>
-		<hr />
-	</div>
+	<h1>Epsilon</h1>
+</div>
+<div class="nav">
+	<ul class="nav nav-tabs">
+		<li role="presentation" class="active"><a ui-sref="home">Home</a></li>
+		<li role="presentation"><a ui-sref="about-us">About Us</a></li>
+		<li role="presentation"><a ui-sref="contact-us">Contact Us</a></li>
+		<li role="presentation"><a ui-sref="articles">Articles</a></li>
+		<li role="presentation"><a ui-sref="dashboard">Dashboard</a></li>
+	</ul>
+	<hr />
+</div>	
+<script>
+	$(document).ready(function() {
+	$('.nav-tabs > li').on('click', function(e) {
+		$('.nav-tabs > li').removeClass('active');
+		$(this).addClass('active');
+	});
+});
+</script>

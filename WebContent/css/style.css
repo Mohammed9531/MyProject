@@ -87,6 +87,10 @@ footer {
 	background-color: #eee;
 }
 
+.thead {
+  text-align: center;
+}
+
 .pagination-centered{
 text-align: center;
 }

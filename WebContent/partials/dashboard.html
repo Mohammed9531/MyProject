@@ -2,29 +2,35 @@
 <!-- <div ng-include src="'partials/alerts.html'"></div> -->
 	<div class="panel panel-default">
 		<div class="panel-heading">
-		<h4><a data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-plus-sign"></span></a>&nbsp;<label>Add article</label></h4> 
+		<h4><a data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-plus-sign"></span></a>&nbsp;<label>Add Article</label></h4> 
+		</div>
+		<div class="panel-heading" ng-hide="!(showHide.show)">
+		<h4><a data-toggle="modal" data-target="#myModal2" href="#myModal2"><span class="glyphicon glyphicon-trash"></span></a>&nbsp;<label>Delete All</label></h4> 
 		</div>
 		<table class="table table-bordered" style="float: none;">
 			<thead>
 				<tr>
 					<th colspan="6">
 					<div ng-include src="'partials/search.html'"></div>
-				<tr><th><input type="checkbox" /></th>
-					<th>Date</th>
-					<th>Article Name</th>
-					<th>Posted By</th>
-					<th colspan="3">Actions</th>
+					</th>
+				</tr>
+				<tr class="thead">
+					<th class="thead"><input type="checkbox" ng-model="selectAll" ng-click="event()"/></th>
+					<th class="thead">Date</th>
+					<th class="thead">Article Name</th>
+					<th class="thead">Posted By</th>
+					<th colspan="3" class="thead">Actions</th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr ng-repeat="x in articles | filter:search">
-				    <td><input type="checkbox" /></td>
+				    <td class="thead"><input type="checkbox" ng-checked="selectAll"/></td>
 					<td ng-model="date">{{ x.date }}</td>
 					<td ng-model="article">{{ x.articleName }}</td>
 					<td ng-model="posted">{{ x.postedBy }}</td>
-					<td><a href="#/view"><i class="glyphicon glyphicon-pencil"></i></a></td>
-					<td><a ui-sref="view" ><i class="glyphicon glyphicon-eye-open"></i></a></td>
-					<td><a ui-sref="view"><i class="glyphicon glyphicon-trash"></i></a></td>
+					<td class="thead"><a href="#/view"><i class="glyphicon glyphicon-pencil"></i></a></td>
+					<td class="thead"><a ui-sref="view" ><i class="glyphicon glyphicon-eye-open"></i></a></td>
+					<td class="thead" ng-click="remove($index)"><a ui-sref="view"><i class="glyphicon glyphicon-trash"></i></a></td>
 				</tr>
 			</tbody>
 		</table>
@@ -42,3 +48,4 @@
   </ul>
 </nav>
 <div ng-include src="'partials/new-article.html'"></div>
+<div ng-include src="'partials/delete-confirmation-modal.html'"></div>

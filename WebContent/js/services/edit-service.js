@@ -1,4 +1,4 @@
-var app = angular.module('myApp', ['ngRoute']);
+/*var app = angular.module('myApp', ['ngRoute']);
 
 app.config(function($routeProvider) {
   
@@ -71,4 +71,4 @@ app.factory('bookService', function ($q, $timeout) {
       //
     }
   };
-});
+});*/

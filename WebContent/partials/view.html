@@ -1,0 +1,21 @@
+<div id="ribbon-example-9" ng-show="editing">
+	<!--start ribbon-->
+	<div class="ribbon-wrapper">
+		<div class="ribbon-front">
+			<h2 ng-model="editing.articleName">{{editing.articleName}}</h2>
+		</div>
+		<div class="ribbon-edge-left-top"></div>
+		<div class="ribbon-edge-right-top"></div>
+		<div class="ribbon-edge-left-bottom"></div>
+		<div class="ribbon-edge-right-bottom"></div>
+		<div class="ribbon-back-left"></div>
+		<div class="ribbon-back-right"></div>
+	</div>
+	<!--end ribbon -->
+
+	<div id="example-9-content">
+		<label class="label-control" ng-model="editing.date">Date Posted:</label>{{editing.date}}
+		<br>
+		<label class="label-control" ng-model="editing.postedBy">Posted By</label>{{editing.postedBy}}
+	</div>
+</div>

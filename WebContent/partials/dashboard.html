@@ -7,7 +7,7 @@
 		<div class="panel-heading" ng-hide="!(showHide.show)">
 		<h4><a data-toggle="modal" data-target="#myModal2" href="#myModal2"><span class="glyphicon glyphicon-trash"></span></a>&nbsp;<label>Delete All</label></h4> 
 		</div>
-		<table class="table table-bordered" style="float: none;">
+		<table class="table table-bordered">
 			<thead>
 				<tr>
 					<th colspan="6">
@@ -30,21 +30,21 @@
 					</th>
 				</tr>
 				<tr class="thead">
-					<th class="thead"><input type="checkbox" ng-model="selectAll" ng-click="event()"/></th>
-					<th class="thead">Date</th>
-					<th class="thead">Article Name</th>
-					<th class="thead">Posted By</th>
-					<th colspan="3" class="thead">Actions</th>
+					<th class="thead" style="width: 4%"><input type="checkbox" ng-model="selectAll" ng-click="event()"/></th>
+					<th class="thead" style="width: 22%">Date</th>
+					<th class="thead" style="width: 22%">Article Name</th>
+					<th class="thead" style="width: 22%">Posted By</th>
+					<th colspan="3" class="thead" style="width: 30%">Actions</th>
 				</tr>
 			</thead>
 			<tbody>
-				<tr ng-repeat="x in articles | filter:search">
+				<tr class="item" ng-repeat="item in articles | filter:search">
 				    <td class="thead"><input type="checkbox" ng-checked="selectAll"/></td>
-					<td ng-model="date">{{ x.date }}</td>
-					<td ng-model="article">{{ x.articleName }}</td>
-					<td ng-model="posted">{{ x.postedBy }}</td>
-					<td class="thead"><a href="#/view"><i class="glyphicon glyphicon-pencil"></i></a></td>
-					<td class="thead"><a ui-sref="view" ><i class="glyphicon glyphicon-eye-open"></i></a></td>
+					<td>{{ item.date }}</td>
+					<td>{{ item.articleName }}</td>
+					<td>{{ item.postedBy }}</td>
+					<td class="thead"><a ui-sref="edit" ng-click="editItem(item);"><i class="glyphicon glyphicon-pencil"></i></a></td>
+					<td class="thead"><a ui-sref="view" ng-click="editItem(item);"><i class="glyphicon glyphicon-eye-open"></i></a></td>
 					<td class="thead" ng-click="remove($index)"><a ui-sref="view"><i class="glyphicon glyphicon-trash"></i></a></td>
 				</tr>
 			</tbody>

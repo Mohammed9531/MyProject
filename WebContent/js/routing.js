@@ -21,22 +21,27 @@ app.config(function($stateProvider, $urlRouterProvider) {
 	.state('contact-us', {
 		url: "/contact-us",
 		templateUrl: "partials/contact-us.html"
-	}).state('articles', {
+	})
+	.state('articles', {
 		url: "/articles",
-		templateUrl: "partials/cards.html",
-		controller: "ctrl"
+		templateUrl: "partials/cards.html"
 			
-	}).state('dashboard', {
+	})
+	.state('dashboard', {
 		url: "/dashboard",
-		templateUrl: "partials/dashboard.html",
-		controller: "ctrl"
+		templateUrl: "partials/dashboard.html"
 			
-	}).state('new', {
+	})
+	.state('new', {
 		url: "/new",
 		templateUrl: "partials/new-article.html"
-	}).state('view', {
+	})
+	.state('edit', {
+		url: "/edit",
+		templateUrl: "partials/edit.html"
+	})
+	.state('view', {
 		url: "/view",
-		templateUrl: "partials/view.html",
-		controller: "shareCtrl"
+		templateUrl: "partials/view.html"
 	});
 });

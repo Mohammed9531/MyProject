@@ -1,18 +1,26 @@
-
-<form  class="form-horizontal">
-	<div class="col-md-6">
-		<label class="label-control">Date:</label> 
-		<input class="form-control" type="text" name="name" ng-model="x.date" />
-		<br /> 
-		<label>Article Name:</label> 
-		<input class="form-control" type="text" name="email" ng-model="x.articleName" /> 
-		<br /> 
-		<label>Posted By:</label> 
-		<input  class="form-control" type="text" name="phone" ng-model="x.postedBy" /> <br /> 
-		<input type="hidden" ng-model="x.id" /> 
-		<input class="btn btn-primary" type="button" value="Save" ng-click="saveContact()" />
-		<br />
-	</div>	
-</form>
-
-
+<div class="col-md-6" ng-show="editing">
+<div class="list-group well" ><!-- ng-show="editing" -->
+  <form class="form-horizontal" role="form">
+    <div class="modal-body">
+      <div>
+        <label>Date:</label>
+        <input class="form-control col-sm-8" type="text" id="lg" placeholder="Date..." ng-model="editing.date" />
+        <br><br />
+        <label>Article Name:</label>
+        <input class="form-control col-sm-8" type="text" id="lg" placeholder="Name of the article..." ng-model="editing.articleName"/>
+        <br><br />
+        <label>Posted By:</label>
+        <input class="form-control" type="text" id="lg" placeholder="Author name..." ng-model="editing.postedBy" />
+        <br><br />
+        <label>Message:</label>
+        <textarea class="form-control" rows="10" cols="55" placeholder="Enter text ..." ng-model="editing.message"></textarea>
+        <br><br />
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" ui-sref="home">Cancel</button>
+      <button type="button" class="btn btn-primary" ng-click="save()">Save</button>
+    </div>
+  </form>
+</div>
+</div>
